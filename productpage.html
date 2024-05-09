@@ -15,13 +15,16 @@
             <div class="container">
                 <div class="brand">
                     <img src="logo1.jpg" alt="XEN Logo">
-                    <h1>XEN</h1>
+                    <h1 class="nav-item"><a class="nav-link" href="index.html">XEN</h1>
                 </div>
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#"> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> Contact</a></li>
+                <div class="spacer"></div>
+                <ul class="navbar">
+                    <li class="invisible"><a class="nav-link" href="index.html"> Home</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html"> Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"> Contact</a></li>
                     <li class="nav-item">
                         <a href="#" class="nav-link"> Cart</a>
                     </li>
@@ -37,10 +40,15 @@
             <div class="product-image">
                 <img src="product-image.jpg" alt="Product Image" id="product-details-image">
             </div>
-            <div class="product-details">
+            <div class="border product-details container d-flex align-items-center justify-content-center ml-5">
                 <h1 id="product-details-title">Product Name</h1>
                 <p class="product-price" id="product-details-price">$XX.XX</p>
-                <p class="product-description" id="product-details-description">Product description goes here.</p>
+                <div class="container">
+                    <div class="container text-justify text-center">
+                        <p class="product-description1" id="product-details-description">Product description goes here.</p>
+                    </div>
+                </div>
+                
                 <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
             </div>
         </section>        
@@ -59,23 +67,24 @@
             <div class="comment-section">
                 <h2>Leave a Comment</h2>
                 <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" name="comment" required></textarea>
-                    <button type="submit">Submit</button>
+                    <label for="name">Name:</label><br><div class="spacer"></div>
+                    <input type="text" id="name" name="name" required><br><div class="spacer"></div>
+                    <label for="comment">Comment:</label><br><div class="spacer"></div>
+                    <input type="text" name="comment" required><br><div class="spacer"></div>
+                    <button type="submit" class=" add-to-cart-btn">Submit</button><br><div class="spacer"></div>
                 </form>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <!-- Footer content here -->
-        <!-- Social media icons -->
+        
         <div class="social-icons">
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="https://wa.me/123456789"><i class="fab fa-whatsapp"></i></a>
+
         </div>
+        <p>&copy; 2024 Xen - Stylish Tee Boutique. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
