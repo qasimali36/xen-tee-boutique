@@ -314,6 +314,7 @@ p{
 }
 .product-description2{
     color: rgb(99, 244, 125);
+    font-family: wavy,sans-serif;
 }
 
 .product-details {
@@ -366,4 +367,72 @@ p{
     .product {
         flex-direction: column;
     }
+}
+/* Styles for main page */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.article{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.blog-card {
+    width: calc(30% - 20px);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+}
+
+.blog-details {
+    padding: 20px;
+}
+
+.blog-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.blog-description {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+/* Styles for detailed blog pages */
+.blog-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.blog-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.blog-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
